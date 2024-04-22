@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #171A2F;
+    color: rgba(255, 255, 255, 0.90);
+
+    @font-face {
+        font-family: Bahnschrift;
+        src: url("static/fonts/Bahnschrift") format("ttf"), url("static/fonts/Bahnschrift.woff") format("woff"), url("static/fonts/Bahnschrift.woff2") format("woff2");
+    }
+
+    font-family: Bahnschrift;
+}
+
+/*****шапка**********/
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.80);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 60;
+    
+    
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: rgba(250, 255, 0, 1);
+}
+
+@media screen and (min-width: 1620px) and (max-width: 1920px) {
+    a {
+        font-size: 45px;
+        padding: 80px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1620px) {
+    a {
+        font-size: 35px;
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1280px) {
+    a {
+        font-size: 28px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+    a {
+        font-size: 18px;
+        padding: 19px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    nav {
+        max-height: 20px;
+    }
+    
+    a {
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+/**********главная***********/
+.face {
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1620px) and (max-width: 1920px) {
+    .pict {
+        width: 1200px;
+        z-index: 50;
+    }
+
+    .text {
+        position: relative;
+        height: 400px;
+        top: 300px;
+        z-index: 50;
+        text-align: left;
+        left: 250px;
+    }
+
+    h1 {
+        font-size: 85px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #578195;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 600px;
+        height: 225px;
+        font-size: 27px;
+        z-index: 50;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .back {
+        background: rgba(0, 35, 161, 0.42);
+        filter: blur(125px);
+        z-index: -1;
+        position: absolute;
+        width: 769px;
+        height: 487px;
+        top: 300px;
+        left: 120px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1620px) {
+    .pict {
+        z-index: 50;
+        width: 850px;
+    }
+
+    .text {
+        position: relative;
+        height: 400px;
+        top: 190px;
+        z-index: 50;
+        text-align: left;
+        left: 250px;
+    }
+
+    h1 {
+        font-size: 85px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #578195;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 543px;
+        height: 225px;
+        font-size: 27px;
+        z-index: 50;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .back {
+        background: rgba(0, 35, 161, 0.42);
+        filter: blur(125px);
+        z-index: -1;
+        position: absolute;
+        width: 769px;
+        height: 487px;
+        top: 170px;
+        left: 120px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1280px) {
+    .pict {
+        z-index: 50;
+        width: 590px;
+    }
+
+    .text {
+        position: relative;
+        top: 130px;
+        z-index: 50;
+        text-align: left;
+        left: 180px;
+    }
+
+    h1 {
+        font-size: 47px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #578195;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 370px;
+        height: 225px;
+        z-index: 50;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .back {
+        background: rgba(0, 35, 161, 0.42);
+        filter: blur(125px);
+        z-index: -1;
+        position: absolute;
+        width: 470px;
+        height: 300px;
+        top: 140px;
+        left: 190px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1280px) {
+    .pict {
+        z-index: 50;
+        width: 590px;
+    }
+
+    .text {
+        position: relative;
+        top: 130px;
+        z-index: 50;
+        text-align: left;
+        left: 180px;
+    }
+
+    h1 {
+        font-size: 47px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #578195;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 370px;
+        height: 225px;
+        z-index: 50;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .back {
+        background: rgba(0, 35, 161, 0.42);
+        filter: blur(125px);
+        z-index: -1;
+        position: absolute;
+        width: 470px;
+        height: 300px;
+        top: 140px;
+        left: 190px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+    .pict {
+        z-index: 50;
+        width: 370px;
+        padding-left: 10px;
+    }
+
+    .text {
+        position: relative;
+        top: 100px;
+        width: 300px;
+        z-index: 50;
+        text-align: left;
+        left: 110px;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #578195;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 200px;
+        height: 225px;
+        z-index: 50;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .back {
+        background: rgba(0, 35, 161, 0.42);
+        filter: blur(125px);
+        z-index: -1;
+        position: absolute;
+        width: 250px;
+        height: 150px;
+        top: 100px;
+        left: 70px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .pict {
+        position: absolute;
+        z-index: -1;
+        width: 80%;
+        padding-left: 10px;
+        opacity: 0.4;
+    }
+
+    .text {
+        position: relative;
+        box-align: center;
+        width: 200px;
+        z-index: 50;
+        text-align: center;
+        top: 90px;
+
+    }
+
+    h1 {
+        font-size: 27px;
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #9eddfb;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .perf {
+        width: 200px;
+        height: 225px;
+        z-index: 50;
+        font-size: 9px;
+        font-weight: 400;
+    }
+}
+
+/************ОБРАЗЫ*************/
+.caro {
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(4px);
+    display: flex;
+    padding: 12px 35px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: 12px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: 12px;
+}
+
+.wrapper .carousel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: calc(100% / 3);
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        size: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
+/***********ИСТОРИЯ**************/
+#history {
+    position: relative;
+    padding: 5% 15% 10% 15%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.colum {
+    width: 49%;
+}
+
+.one {
+    text-align: justify;
+    white-space: normal;
+    display: inline-block;
+   
+}
+.two {
+    width: 48%;
+    text-align: justify;
+    white-space: normal;
+    display: inline-block;
+
+}
+h4 {
+    color: #B8BA42;
+    font-weight: 400;
+    line-height: 100%;
+}
+@media screen and (min-width: 1620px) and (max-width: 1920px) {
+    .one{
+      font-size: 35px;  
+    }
+    .two{
+        font-size: 35px;  
+      }
+    h4{
+        font-size: 138px;
+    }
+}
+@media screen and (min-width:1240px) and (max-width: 1620px) {
+    .one{
+      font-size: 25px;  
+    }
+    .two{
+        font-size: 25px;  
+      }
+    h4{
+        font-size: 104px;
+    }
+}
+@media screen and (min-width:950px) and (max-width: 1240px) {
+    .one{
+      font-size: 20px;  
+    }
+    .two{
+        font-size: 20px;  
+      }
+    h4{
+        font-size: 79px;
+    }
+}
+@media screen and (min-width:850px) and (max-width: 950px) {
+    .one{
+      font-size: 16px;  
+    }
+    .two{
+        font-size: 16px;  
+      }
+    h4{
+        font-size: 69px;
+    }
+}
+@media screen and (min-width:300px) and (max-width: 850px) {
+    .one{
+      font-size: 10px;  
+    }
+    .two{
+        font-size: 10px;  
+      }
+    h4{
+        font-size: 27px;
+    }
+}
+/***************************KONTAKTI***********/
+.con{
+    display: block;
+    float:left;
+    margin: 3% 0 3% 1.5%;
+    
+ }
+ .con:first-child{
+    margin-left:15%;
+ }
+ .part_2_of_3 {
+    width: 50%; 
+ }
+ .part_1_of_3 {
+    width: 30%; 
+ }
+
+
+ .cont-form input[type="email"],.cont-form textarea{
+    width: 42%; 
+    padding: 15px;
+    display: block;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.57); 
+    color: #FFF; 
+    font-size: 18px; 
+    float:left;
+    margin-right: 2em; 
+    border: 2px solid #B8BA42; 
+    border-radius: 10px;
+    
+ }
+ .cont-form input[type="email"]{
+    margin-right: 0em; 
+ }
+ .cont-form textarea{ 
+    padding: 18px; 
+    display: block;
+    width: 93%; 
+    height:100px; 
+    background-color: rgba(0, 0, 0, 0.57); 
+    outline: none;
+    color: #FFF;; 
+    font-size: 20px; 
+    border:2px solid #B8BA42;
+    margin-bottom: 2em;
+ }
+ .cont-form input[type="submit"] {
+    float: left;
+    margin: 0 0 1% 1%;
+    font-size: 15PX;
+    color:#fff;
+    padding: 11px 22px;
+    background-color: #B8BA42;
+    border:none;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase; 
+    float: right;
+    border-radius: 10PX;
+ }
+ .con:last-child{
+    display: block;
+    width: 30%;
+    float: left;
+ }
+ ul { list-style: none; }
+@media screen and (min-width: 800px) and (max-width:1250px ) { 
+ .comp_add li {
+    width: 90%;
+    float: left;
+    font-size: 15px;}
+ .cont-form input[type="submit"] {
+    font-size: 25px;
+ }
+ h5{
+    font-size: 25px;
+    color: #FAFF00;
+ }
+
+}
+@media screen and (min-width: 1240px) and (max-width:1920px) { 
+    .comp_add li {
+       width: 90%;
+       float: left;
+       font-size: 25px;}
+    .cont-form input[type="submit"] {
+       font-size: 29px;
+       float: left;
+    }
+    h5{
+       font-size: 32px;
+       color: #FAFF00;
+    }
+   }
+   @media screen and (min-width: 800px) and (max-width:1240px) { 
+    .cont-form input[type="submit"] {
+        font-size: 21px;
+        float: left;
+        width: 170px;
+     }
+     .cont-form input[type="email"]{
+        height:15px; 
+        font-size: 15px;
+     }
+}
+   @media screen and (min-width: 300px) and (max-width:800px) { 
+    .comp_add li {
+       width: 90%;
+       float: left;
+       font-size: 10px;
+       
+    }
+    .cont-form input[type="email"]{
+        height:5px; 
+        font-size: 15px;
+     }
+     .cont-form textarea{ 
+        font-size: 15px;
+        height:50px; 
+    }
+
+    .cont-form input[type="submit"] {
+       font-size: 15px;
+       float: left;
+       width: 100px;
+       font-size: 10px;
+       
+    }
+    .message{
+        height: 100px;
+        font-size: 10px;
+    }
+    h5{
+       font-size: 10px;
+       color: #FAFF00;
+    }
+   
+   }
